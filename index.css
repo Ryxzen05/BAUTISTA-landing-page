@@ -1,0 +1,172 @@
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background: url(bg.png) no-repeat;
+    background-size: cover  ;
+    height: 100vh;
+    width: 100%;
+}
+  /* nav*/
+  #menu {
+    z-index: 2;
+ 
+  }
+ .title{
+     display: flex;
+     justify-content: flex-end;
+     padding-right: 8px;
+     padding-top: 12px;
+     color: #ffffff;
+     font-weight: 800;
+ }
+  #menu-bar {
+    width: 35px;
+    height: 35px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    
+  }
+ 
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #5991FE, #5991FE);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+  /*end - nav*/
+  
+  /*section-1*/
+ .sec-1{
+     height: 90%;
+     display: flex;
+ }
+  .container{
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      padding: 2rem;
+  }
+  .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+     
+      width: max-content;
+      margin:auto;
+        padding-top: 3rem;
+  }
+  .grid-1{
+      display: none;
+  }
+  .grid img{
+      width: 13rem;
+      
+  }
+  .title-1 {
+      padding: 0;
+  }
+  /*section-2*/
+  .sec-1{
+    height: 90%;
+}
+@media only screen and (min-width: 992px) {
+
+    .grid{
+        display: none;
+    }
+.grid-1{
+flex-direction: column;
+margin-left: 20rem;
+display: flex;
+background-color: red;
+justify-content: center;
+background: none;
+gap: 5rem;
+
+}
+.grid-1 img{
+    width: 13rem;
+    
+}
+
+}
